@@ -25,7 +25,7 @@
   <body class="relative">
     <!-- main body -->
     <div class="m-auto">
-      <header>
+      <header class="mb-14">
         <nav
           class="fixed top-0 flex z-20 justify-between items-center bg-[#ebebea] px-8 py-2 border-b-2 border-gray-300 w-full"
         >
@@ -76,15 +76,22 @@
             </p>
             <!-- form -->
             <fieldset class="fieldset rounded-box flex flex-col space-y-2">
-              <input type="email" class="input" placeholder="Enter Your Name" />
+              <input
+                id="name-input"
+                type="email"
+                class="input"
+                placeholder="Name Rahim"
+              />
 
               <input
+                id="password"
                 type="password"
                 class="input"
-                placeholder="Enter Password"
+                placeholder="Password is 123456"
               />
 
               <button
+                id="get-start-btn"
                 class="btn font-semibold text-[14px] bg-[#422ad4] text-white w-[20%] hover:bg-[#5342c5]"
               >
                 Get Started
@@ -103,7 +110,7 @@
       </header>
       <main>
         <!-- learn section -->
-        <section id="learn" class="mb-28 px-10">
+        <section id="learn" class="mb-28 px-10 hidden">
           <h1 class="text-center text-[36px] font-bold mb-10">
             <span class="text-[#00BCFF]">Let's</span> Learn Vocabularies
           </h1>
@@ -127,7 +134,10 @@
           </div>
         </section>
         <!-- FAQ section -->
-        <section id="faq" class="px-10 mb-12 border-b-2 pb-24 border-[#FFEBEB]">
+        <section
+          id="faq"
+          class="px-10 mb-12 border-b-2 pb-24 border-[#FFEBEB] hidden"
+        >
           <h1 class="text-center text-[36px] font-bold mb-16">
             <span class="text-[#00BCFF]">Frequently</span> Asked Questions
           </h1>

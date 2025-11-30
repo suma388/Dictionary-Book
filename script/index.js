@@ -161,3 +161,25 @@ function pronounceWord(word) {
 
 lessonDataFetch();
 // allLessonDataFetch();
+// ----------------------login section--------------------------
+document.getElementById("get-start-btn").addEventListener("click", () => {
+  const nameInput = document.getElementById("name-input").value;
+  const passwordInput = document.getElementById("password").value;
+  const password = parseInt(passwordInput);
+  if (nameInput === "rahim") {
+    console.log("ok");
+  } else {
+    alert("Please Enter Name!!!");
+    return;
+  }
+  if (password === 123456) {
+    document.getElementById("learn").classList.remove("hidden");
+    document.getElementById("faq").classList.remove("hidden");
+    console.log("all ok");
+  } else {
+    alert("Please Enter Valid Password");
+    return;
+  }
+  // console.log(typeof nameInput);
+  // console.log("okk");
+});
