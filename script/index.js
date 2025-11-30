@@ -173,9 +173,9 @@ document.getElementById("get-start-btn").addEventListener("click", () => {
     return;
   }
   if (password === 123456) {
+    alert("Your Requset is Successfull");
     document.getElementById("learn").classList.remove("hidden");
     document.getElementById("faq").classList.remove("hidden");
-    console.log("all ok");
   } else {
     alert("Please Enter Valid Password");
     return;
