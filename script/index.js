@@ -177,7 +177,7 @@ document.getElementById("get-start-btn").addEventListener("click", () => {
   const nameInput = document.getElementById("name-input").value;
   const passwordInput = document.getElementById("password").value;
   const password = parseInt(passwordInput);
-  if (nameInput === "rahim") {
+  if (nameInput === "Rahim") {
     console.log("ok");
   } else {
     alert("Please Enter Name!!!");
