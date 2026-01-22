@@ -1,3 +1,14 @@
+const menuBtn = document.getElementById("menu-btn");
+const mobileMenu = document.getElementById("mobile-menu");
+
+menuBtn.addEventListener("click", () => {
+  mobileMenu.classList.toggle("hidden");
+});
+
+function closeMenu() {
+  mobileMenu.classList.add("hidden");
+}
+
 //                        nav button trogle
 function goToFAQ() {
   document.getElementById("faq").scrollIntoView({ behavior: "smooth" });
@@ -54,8 +65,8 @@ function showCardDetails(details) {
   const detailsContainer = document.getElementById("detais-container");
   detailsContainer.innerHTML = `<h3 class="text-[36px] font-semibold mb-5">
             ${details.word} (<i class="fa-etch fa-solid fa-microphone"></i>:${
-    details.pronunciation
-  } )
+              details.pronunciation
+            } )
           </h3>
           <h3 class="text-[24px] font-semibold">Meaning</h3>
           <h3 class="text-[24px] font-medium mb-5">${
